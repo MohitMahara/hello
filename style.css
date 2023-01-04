@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #EAFDFC;
+}
+
+/* nav-bar */
+nav {
+    background-color: #243763;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.brand {
+    color: white;
+    display: flex;
+    gap: 10px;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.item-list {
+    transition: 0.2s ease-out;
+}
+
+
+
+/* main container */
+
+.main-container {
+    text-align: center;
+    padding: 80px 38%;
+}
+
+.Calculator {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+
+.action-row,
+.first-row,
+.second-row,
+.third-row,
+.last-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numeric-pad div {
+    padding-block: 10px;
+}
+
+.numeric-pad {
+    background-color: black;
+    color: white;
+    padding-block: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.answer {
+    padding: 10px;
+    text-align: end;    
+}
+
+.action-row {
+    color: red;
+}
+
+.action-row p{
+    border: none;
+}
+
+/* Utility Classes */
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+    cursor: pointer;
+    border: 0.5px solid grey;
+    padding: 5px 10px;
+}
+
+button{
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    color: red;
+    background-color: black;
+}
+
+
+
+input[type="text"]{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align:end;
+    padding: 5px;
+}
+
+
+.modulus{
+    margin-right: 10px;
+}
+/* Media querys  for  large laptops*/
+
+@media screen and (min-width:1440px) {
+    .main-container {
+     padding:15% 30%;
+    }
+}
+
+
+
+/* media querys for tablets */
+
+@media screen and (max-width:769px) {
+    .main-container {
+        padding: 5% 33%;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/* media querys for phones and large phones */
+
+@media screen and (max-width:660px) {
+     h2{
+        font-size: 1.2rem;
+     }
+
+
+
+    .nav-container {
+        position: relative;
+    }
+
+    .item-list {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        top: 140%;
+        border-radius: 8px;
+        right: 0%;
+        opacity: 0;
+    }
+
+    .item-list.active {
+        opacity: 1;
+    }
+
+    .item-list a {
+        color: black;
+    }
+
+    #nav-toggle {
+        display: inherit;
+    }
+
+    .main-container {
+        padding:7vh 15%;
+    }
+
+}
+
+

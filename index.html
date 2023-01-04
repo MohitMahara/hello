@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.com</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts awesome link -->
+    <script src="https://kit.fontawesome.com/3bf8c869a3.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@400;500&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="brand">
+                <i class="fa-solid fa-calculator fa-2x"></i>
+                <h2>Calculator.com</h2>
+            </div>
+
+            <ul class="item-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="nav-toggle"></i>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <main class="main-container">
+        <div class="Calculator">
+            <div class="answer">
+                <input type="text" class="answer-text " placeholder="0" value="" readonly="readonly">
+            </div>
+            <div class="numeric-pad">
+
+                <div class="action-row">
+                    <p  class="button">AC</p>
+                    <p  class="button" id="delete"><i class="fa-solid fa-delete-left"></i></p>
+                    <p  class="button divide">/</p>
+                    <button  class="button modulus">%</button>
+                 </div>
+
+                <div class="first-row">
+                    <p class=" button one">1</p> 
+                    <p class=" button two">2</p> 
+                    <p class=" button three">3</p>
+                    <p class=" button multiply">*</p>
+                </div>
+                
+                
+                <div class="second-row">
+                    <p class=" button four">4</p> 
+                    <p class=" button five">5</p>
+                    <p class=" button six">6</p>
+                    <p class=" button minus">-</p>
+                </div>
+
+
+                <div class="third-row"> 
+                    <p class=" button seven">7</p> 
+                    <p class=" button eight">8</p>
+                    <p class=" button nine">9</p>
+                    <p class=" button plus">+</p>
+
+                    </div>
+
+                    <div class="last-row">
+                        <p class=" button expand"><i class="fa-solid fa-rotate"></i></p> 
+                        <p class=" button zero">0</p>
+                        <p class=" button point">.</p>
+                        <p class=" button equal-to">=</p>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
